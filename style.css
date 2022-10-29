@@ -133,5 +133,12 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 44px;
+    font-family:var(stencil)
     
+}
+@font-face {
+    font-family: "stencil" stencil;
+    src: url('./fonts/Stencil_Regular.ttf');
+    src: url('Stencil_Regular.ttf') format('truetype'),
+            url('Stencil_Regular.ttf') format('truetype');
 }
