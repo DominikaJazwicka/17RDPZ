@@ -1,7 +1,8 @@
 body {
     margin: 0;
     background-color: #959595;
-
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 *{
@@ -23,21 +24,7 @@ a {
     display: flex;
     gap: 15px;
     flex-direction: column;
-    background-color: #fff;
-
   }
-  
-
-/* .box1 {
-    width: 30px;
-    background-color: white;
-    height: 2000px;
-}
-.box2 {
-    width: 30px;
-    background: red;
-    height: 2000px;
-} */
 
 
 
@@ -70,7 +57,9 @@ a {
     padding: 15px;
 }
 
-
+.RDPZ {
+    font-weight: 900;
+}
 
 .relative {
     position: relative;
@@ -78,7 +67,7 @@ a {
 
 .div-test {
     width: 30px;
-    height: 2000px;
+    height: 3000px;
     background-color: white;
     position: absolute;
     z-index: 2;
@@ -91,7 +80,7 @@ a {
 
 .div-test2 {
     width: 30px;
-    height: 2000px;
+    height: 3000px;
     background-color: red;
     position: absolute;
     z-index: 2;
@@ -114,31 +103,82 @@ a {
 
 
 .section2 {
-    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: 847px;
+    background-image: url("./images/zdjęciewtle2.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: #373737;
 }
 
-.div-sprawdzam {
-    display: flex;
-    background-color: black;
-    width: 100%;
-    height: 800px;
-    align-items: center;
+.ul-section2 {
     justify-content: center;
-    text-align: center;
-
+    align-items: center;
+    width: auto;
+    height: 847px;
+    margin-top: 205px;
 }
 
 .h1 {
+    display: flex;
+    margin: auto;
     color: #fff;
-    align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 44px;
-    font-family:var(stencil)
-    
+    font-family: stencil-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-@font-face {
-    font-family: "stencil" stencil;
-    src: url('./fonts/Stencil_Regular.ttf');
-    src: url('Stencil_Regular.ttf') format('truetype'),
-            url('Stencil_Regular.ttf') format('truetype');
+
+.report-back {
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 60px;
+    background-color: #D8601D;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -18px 16px 26px -16px rgba(66, 68, 90, 1);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.report-back:hover{
+    background-color: #F4C80F;
+}
+
+
+
+.section3 {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: 847px;
+    background-repeat: no-repeat;
+    background-color: #373737;
+}
+
+.h2 { 
+    justify-content: center;
+}
+
+.svg-main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
