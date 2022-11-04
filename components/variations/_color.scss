@@ -1,0 +1,14 @@
+$colors: (
+    "orangee":  #D8601D,
+    "orangee2": #D8981D,
+    "whitee": #ffff,
+    "darkgray": #373737,
+    "backgroundcolor": #494949,
+    "lightgray": #F5F5F5,
+    "red": #D41111,
+);
+
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }

@@ -1,0 +1,441 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: #959595;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.flag {
+  position: relative;
+}
+.flag__white {
+  width: 30px;
+  height: 3000px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  top: -100px;
+}
+
+.flag2 {
+  position: relative;
+}
+.flag2__red {
+  width: 30px;
+  height: 3000px;
+  background-color: #D41111;
+  position: absolute;
+  z-index: 2;
+  top: -100px;
+  left: 30px;
+}
+
+.flagSvg {
+  position: relative;
+}
+.flagSvg__element {
+  width: auto;
+  position: fixed;
+  left: 9px;
+  top: 25px;
+  z-index: 3;
+}
+
+.header {
+  width: auto;
+  height: 100px;
+  background-color: #373737;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__nav-element {
+  padding: 15px;
+}
+
+.header__contact {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__contact-element {
+  padding: 15px;
+}
+
+.header__navelement17rdpz {
+  font-weight: 900;
+}
+
+.section2 {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+  height: 847px;
+  background-image: url("../images/zdjęciewtle2.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.ul-section2 {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 847px;
+  margin-top: 205px;
+}
+
+.h1 {
+  display: flex;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 44px;
+  font-family: stencil-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.report-back {
+  cursor: pointer;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 220px;
+  height: 60px;
+  background-color: #D8601D;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -18px 16px 26px -16px rgb(66, 68, 90);
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.report-back:hover {
+  background-color: #D8981D;
+}
+
+.section3 {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: auto;
+  height: 847px;
+  background-repeat: no-repeat;
+}
+
+.h2 {
+  justify-content: center;
+}
+
+.svg-main {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background-color: #494949;
+  margin: auto;
+}
+
+.howtojoin {
+  margin: auto;
+  background-color: #494949;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+.howtojoin__div {
+  margin-top: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.howtojoin__rules {
+  margin-left: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.howtojoin__rules-h2 {
+  color: white;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.howtojoin__rules-text {
+  display: flex;
+  width: 410px;
+  color: white;
+}
+
+.form {
+  display: flex;
+}/*# sourceMappingURL=index.min.css.map */

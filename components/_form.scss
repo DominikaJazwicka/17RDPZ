@@ -1,0 +1,45 @@
+@import "./variations/color";
+
+
+.main {
+    background-color: getColor("backgroundcolor");
+    margin: auto;
+}
+
+.howtojoin {
+    margin: auto;
+    background-color: getColor("backgroundcolor");
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+
+&__div {
+    margin-top: 94px;
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+
+
+.howtojoin__rules {
+    margin-left: 94px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.howtojoin__rules-h2 {
+    color: getColor("whitee");
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.howtojoin__rules-text {
+    display: flex;
+    width: 410px;
+    color: getColor(whitee);
+}
+
+
+.form {
+    display: flex;
+}

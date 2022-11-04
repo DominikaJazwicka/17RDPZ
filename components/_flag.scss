@@ -1,0 +1,45 @@
+@import "./variations/color";
+
+
+
+.flag {
+    position: relative;
+
+&__white {
+    width: 30px;
+    height: 3000px;
+    background-color: getColor("whitee");
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+}
+}
+
+
+.flag2 {
+    position: relative;
+
+&__red {
+    width: 30px;
+    height: 3000px;
+    background-color: getColor("red");
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    left: 30px;
+}
+}
+
+.flagSvg {
+    position: relative;
+
+
+&__element {
+    width: auto;
+    position: fixed;
+    left: 9px;
+    top: 25px;
+    z-index: 3;
+}
+}
+

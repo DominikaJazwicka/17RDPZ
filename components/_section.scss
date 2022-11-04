@@ -1,0 +1,83 @@
+@import "./variations/color";
+
+
+.section2 {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: 847px;
+    background-image: url("../images/zdjęciewtle2.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: getColor(garkgray);
+}
+
+.ul-section2 {
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 847px;
+    margin-top: 205px;
+}
+
+.h1 {
+    display: flex;
+    margin: auto;
+    color: getColor(whitee);
+    justify-content: center;
+    text-align: center;
+    font-size: 44px;
+    font-family: stencil-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.report-back {
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 60px;
+    background-color: getColor(orangee);
+    color: getColor(whitee);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    box-shadow: -18px 16px 26px -16px rgba(66, 68, 90, 1);
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.report-back:hover{
+    background-color: getColor(orangee2);
+}
+
+
+
+.section3 {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: 847px;
+    background-repeat: no-repeat;
+    background-color: getColor(garkgray);
+}
+
+.h2 { 
+    justify-content: center;
+}
+
+.svg-main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}

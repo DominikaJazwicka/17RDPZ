@@ -1,0 +1,37 @@
+@import "./variations/color";
+
+
+
+.header {
+    width: auto;
+    height: 100px;
+    background-color: getColor("darkgray");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+&__nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}
+
+.header__nav-element {
+    padding: 15px;
+} 
+
+.header__contact {
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+
+.header__contact-element {
+    padding: 15px;
+}
+
+.header__navelement17rdpz{
+    font-weight: 900;
+}
