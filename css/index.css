@@ -353,6 +353,7 @@ template {
   font-family: stencil-std, sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-shadow: -3px 5px 8px rgb(109, 109, 109);
 }
 
 .report-back {
@@ -404,38 +405,69 @@ template {
   background-color: #494949;
   margin: auto;
 }
+.main__form {
+  background-color: #494949;
+  margin: auto;
+}
 
 .howtojoin {
   margin: auto;
+  display: flex;
+  width: auto;
+  height: 847px;
+  background-image: url("../images/jakdołączyć.png");
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.howtojoin__title {
+  margin: auto;
+  display: flex;
+  color: white;
+  font-size: 44px;
+  font-family: stencil-std, sans-serif;
+  font-style: normal;
+  margin-top: 150px;
+  margin-left: 20%;
+  text-shadow: -3px 5px 8px rgb(109, 109, 109);
+}
+
+.application {
+  margin: auto;
+  width: auto;
+  height: 620px;
   background-color: #494949;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
-.howtojoin__div {
+.application__h2 {
+  color: white;
   margin-top: 94px;
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-.howtojoin__rules {
-  margin-left: 94px;
-  display: flex;
-  flex-wrap: wrap;
+.application__ul-accept {
+  width: 421px;
+  margin-left: 20%;
 }
 
-.howtojoin__rules-h2 {
-  color: white;
-  margin-bottom: 20px;
-  display: flex;
-}
-
-.howtojoin__rules-text {
-  display: flex;
-  width: 410px;
+.application__text {
   color: white;
 }
 
-.form {
-  display: flex;
+.application__ul-form {
+  display: block;
+}
+
+.application__h2-form {
+  color: white;
+  margin-top: 94px;
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-left: 20%;
+}
+
+.application__form {
+  display: block;
 }/*# sourceMappingURL=index.css.map */

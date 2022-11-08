@@ -4,42 +4,79 @@
 .main {
     background-color: getColor("backgroundcolor");
     margin: auto;
+
+    &__form {
+        background-color: getColor("backgroundcolor");
+        margin: auto;
+    }
 }
 
 .howtojoin {
     margin: auto;
+    display: flex;
+    width: auto;
+    height: 847px;
+    background-image: url("../images/jakdołączyć.png");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-color: getColor(garkgray);
+
+}
+
+.howtojoin__title {
+    margin: auto;
+    display: flex;
+    color: getColor(whitee);
+    font-size: 44px;
+    font-family: stencil-std, sans-serif;
+    font-style: normal;
+    margin-top: 150px;
+    margin-left: 20%;
+    text-shadow: -3px 5px 8px rgba(109, 109, 109, 1);
+}
+
+
+.application {
+    margin: auto;
+    width: auto;
+    height: 620px;
     background-color: getColor("backgroundcolor");
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 
-&__div {
-    margin-top: 94px;
-    display: flex;
-    flex-wrap: wrap;
-}
-}
-
-
-.howtojoin__rules {
-    margin-left: 94px;
-    display: flex;
-    flex-wrap: wrap;
+    &__h2 {
+        color: getColor("whitee");
+        margin-top: 94px;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
 }
 
-.howtojoin__rules-h2 {
+
+.application__ul-accept {
+    width: 421px;
+    margin-left: 20%;
+}
+
+.application__text {
     color: getColor("whitee");
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.howtojoin__rules-text {
-    display: flex;
-    width: 410px;
-    color: getColor(whitee);
 }
 
 
-.form {
-    display: flex;
+.application__ul-form {
+    display: block;
+}
+
+
+.application__h2-form {
+    color: getColor("whitee");
+    margin-top: 94px;
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+
+}
+
+.application__form {
+    display: block;
 }
