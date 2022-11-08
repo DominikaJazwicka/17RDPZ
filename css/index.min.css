@@ -414,42 +414,30 @@ template {
   margin: auto;
   display: flex;
   width: auto;
-  height: 847px;
-  background-image: url("../images/jakdołączyć.png");
-  object-fit: cover;
+  height: 310px;
+  background-image: url("../images/toform.png");
+  object-fit: contain;
   background-repeat: no-repeat;
-}
-
-.howtojoin__title {
-  margin: auto;
-  display: flex;
-  color: white;
-  font-size: 44px;
-  font-family: stencil-std, sans-serif;
-  font-style: normal;
-  margin-top: 150px;
-  margin-left: 20%;
-  text-shadow: -3px 5px 8px rgb(109, 109, 109);
 }
 
 .application {
   margin: auto;
   width: auto;
-  height: 620px;
+  height: 550px;
   background-color: #494949;
   display: flex;
   flex-wrap: wrap;
 }
 .application__h2 {
   color: white;
-  margin-top: 94px;
+  margin-top: 80px;
   font-size: 36px;
   margin-bottom: 30px;
 }
 
 .application__ul-accept {
   width: 421px;
-  margin-left: 20%;
+  margin-left: 14%;
 }
 
 .application__text {
@@ -462,12 +450,44 @@ template {
 
 .application__h2-form {
   color: white;
-  margin-top: 94px;
+  margin-top: 80px;
   font-size: 36px;
   margin-bottom: 30px;
-  margin-left: 20%;
 }
 
 .application__form {
   display: block;
+}
+
+.application__input {
+  width: 424px;
+  height: 40px;
+  margin-bottom: 25px;
+}
+
+.application__input-why {
+  padding: 0;
+  width: 424px;
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.submit__button {
+  cursor: pointer;
+  margin-left: 20%;
+  margin-bottom: 70px;
+  width: 120px;
+  height: 40px;
+  background-color: #D8601D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -18px 16px 26px -16px rgb(66, 68, 90);
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.submit__button:hover {
+  background-color: #D8981D;
 }/*# sourceMappingURL=index.min.css.map */

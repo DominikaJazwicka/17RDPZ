@@ -55,17 +55,12 @@ rel="stylesheet">
         </header>
 
 
-
-        <section class="container howtojoin">
-                <h1 class="howtojoin__title">Rekrutacja</h1>
-        </section>
-
-
         <section class="container application">
             <ul class="application__ul-accept">
             <li><h2 class="application__h2">Kogo przyjmujemy?</h2></li>
             <li><div class="application__text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto ipsam adipisci, tempore possimus quo odit obcaecati pariatur accusamus totam corrupti consectetur eos dicta sed expedita aliquid repellendus maiores molestiae reprehenderit nobis quisquam laudantium aperiam illo? Consequuntur natus fuga animi voluptas impedit, sapiente, culpa nemo itaque officiis cum quae vel nihil. Unde rerum velit soluta incidunt necessitatibus illo est maiores ratione quasi aliquam, odit quas accusantium placeat nostrum eius, quibusdam neque ad? Consectetur quisquam earum recusandae incidunt id dolorem cupiditate porro distinctio possimus illo, laborum sapiente cumque. Recusandae officiis minus voluptate nam rem vero aliquam! Veniam, asperiores! Obcaecati, ipsam dolorum?
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio iusto ipsam adipisci, tempore possimus quo odit obcaecati pariatur accusamus totam corrupti 
+                    consectetur eos dicta sed expedita aliquid repellendus maiores molestiae reprehenderit nobis quisquam laudantium aperiam illo? Consequuntur natus fuga animi voluptas impedit, sapiente, culpa nemo itaque officiis cum quae vel nihil. Unde rerum velit soluta incidunt necessitatibus illo est maiores ratione quasi aliquam, odit quas accusantium placeat nostrum eius, quibusdam neque ad? Consectetur quisquam earum recusandae incidunt id dolorem cupiditate porro distinctio possimus illo, laborum sapiente cumque. Recusandae officiis minus voluptate nam rem vero aliquam! Veniam, asperiores! Obcaecati, ipsam dolorum?
 
                 </p>
             </div>
@@ -75,16 +70,36 @@ rel="stylesheet">
             <ul class="application__ul-form">
                 <li><h2 class="application__h2-form">Formularz zgłoszeniowy</h2></li>
                <li  class="application__form"><form>
-                    <input type="text" name="username" placeholder="Imię">
-                    <input type="text" name="username" placeholder="Nazwisko">
-                    <input type="date">
-                    <input type="text" name="username" placeholder="Dlaczego chcesz dołączyć?">
-                    <button type="submit">Wyślij</button>
+                    <div><input type="text" name="username" id="imię" placeholder="Imię" class="application__input"></div>
+                    <div><input type="text" name="username" id="nazwisko" placeholder="Nazwisko" class="application__input"></div>
+                    
+                    <div><input type="date" class="application__input" id="data"        
+                        min="1990-12-31" max="2006-01-01"></div>
+
+                    <div><input type="text" name="username" placeholder="Dlaczego chcesz do nas dołączyć?" class="application__input-why"></div>
+                    <button type="submit" class="submit__button">Wyślij</button>
                 </form>
             </li> 
             </ul>
-
         </section>
+
+        <section class="container howtojoin">
+    </section>
+
+        <footer>
+            <ul>
+                <li>
+                    <div>
+                        <span>
+                            <svg class="footer__sfg" width="44.84" height="53">
+                                <use href="./svg/symbol-defs.svg#cidrowy-emblematv4"></use>
+                            </svg>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+        </footer>
     </main>
     
 
