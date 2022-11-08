@@ -1,1 +1,8 @@
 @import "./variations/color";
+
+
+.footer {
+    width: auto;
+    height: 250px;
+    background-color: getColor("darkgray");
+}

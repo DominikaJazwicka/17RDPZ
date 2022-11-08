@@ -293,6 +293,42 @@ template {
   z-index: 3;
 }
 
+.formflag {
+  position: relative;
+}
+.formflag__white {
+  width: 30px;
+  height: 1310px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  top: -100px;
+}
+
+.formflag2 {
+  position: relative;
+}
+.formflag2__red {
+  width: 30px;
+  height: 1310px;
+  background-color: #D41111;
+  position: absolute;
+  z-index: 2;
+  top: -100px;
+  left: 30px;
+}
+
+.formflagSvg {
+  position: relative;
+}
+.formflagSvg__element {
+  width: auto;
+  position: fixed;
+  left: 9px;
+  top: 25px;
+  z-index: 3;
+}
+
 .header {
   width: auto;
   height: 100px;
@@ -490,4 +526,10 @@ template {
 
 .submit__button:hover {
   background-color: #D8981D;
+}
+
+.footer {
+  width: auto;
+  height: 250px;
+  background-color: #373737;
 }/*# sourceMappingURL=index.min.css.map */

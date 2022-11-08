@@ -43,3 +43,46 @@
 }
 }
 
+// flag-form
+
+
+.formflag {
+    position: relative;
+
+&__white {
+    width: 30px;
+    height: 1310px;
+    background-color: getColor("whitee");
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+}
+}
+
+
+.formflag2 {
+    position: relative;
+
+&__red {
+    width: 30px;
+    height: 1310px;
+    background-color: getColor("red");
+    position: absolute;
+    z-index: 2;
+    top: -100px;
+    left: 30px;
+}
+}
+
+.formflagSvg {
+    position: relative;
+
+
+&__element {
+    width: auto;
+    position: fixed;
+    left: 9px;
+    top: 25px;
+    z-index: 3;
+}
+}
