@@ -529,7 +529,34 @@ template {
 }
 
 .footer {
+  display: flex;
+  flex-wrap: wrap;
   width: auto;
   height: 250px;
   background-color: #373737;
+}
+
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer__svg {
+  display: block;
+  margin-left: 15%;
+  margin-top: 75px;
+}
+
+.footer__svg-text {
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 14px;
+  color: white;
+}
+
+.fotter__list-element {
+  display: flex;
+  margin-top: 75px;
+  margin-left: 5%;
 }/*# sourceMappingURL=index.min.css.map */
