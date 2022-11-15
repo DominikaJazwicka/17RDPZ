@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background-color: #959595;
@@ -341,6 +345,10 @@ template {
   display: flex;
   flex-wrap: wrap;
 }
+.header .nav {
+  display: flex;
+  align-items: center;
+}
 
 .header__nav-element {
   padding: 15px;
@@ -356,7 +364,12 @@ template {
 }
 
 .header__navelement17rdpz {
+  font-size: 18px;
   font-weight: 900;
+}
+
+.header__navelement-tekst {
+  font-size: 14px;
 }
 
 .section2 {

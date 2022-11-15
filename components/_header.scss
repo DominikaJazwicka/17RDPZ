@@ -16,6 +16,11 @@
     flex-wrap: wrap;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 }
 
 .header__nav-element {
@@ -33,6 +38,14 @@
 }
 
 .header__navelement17rdpz{
+    font-size: 18px;
     font-weight: 900;
 }
 
+.header__navelement-tekst {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+}
