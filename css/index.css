@@ -342,12 +342,22 @@ template {
   justify-content: space-around;
 }
 .header__nav {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.header .nav {
+
+.nav {
+  margin-left: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
+}
+
+.header__nav-div {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header__nav-element {
@@ -366,12 +376,51 @@ template {
 .header__navelement17rdpz {
   font-size: 18px;
   font-weight: 900;
+  margin-left: 20%;
 }
 
 .header__navelement-tekst {
   font-size: 14px;
 }
 
+.burger {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 3em;
+  height: 0.3em;
+  background-color: white;
+  margin: 0.7em;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 900px) {
+  .burger {
+    margin-right: 15%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .line {
+    width: 44px;
+    height: 4px;
+    background-color: white;
+    margin: 9px;
+    transition: 0.3s ease-in-out;
+  }
+}
 .section2 {
   margin: auto;
   justify-content: center;
