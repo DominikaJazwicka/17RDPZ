@@ -16,10 +16,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    
 }
 }
 .nav {
-    margin-left: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -34,30 +35,81 @@
 
 .header__nav-element {
     padding: 15px;
+    font-size: 14px;
+
 } 
+
+
+.header__navelement-tekst {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;;
+}
+
+
+.header__navelement-tekst:hover {
+    color: getColor(orangee2);
+}
+
+
 
 .header__contact {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 } 
 
 
 .header__contact-element {
-    padding: 15px;
+    padding-right: 15px;
+    align-items: center;
 }
 
 .header__navelement17rdpz{
     font-size: 18px;
     font-weight: 900;
-    margin-left: 20%;
+    margin-left: 80px;
 }
 
-.header__navelement-tekst {
+
+.header__contact-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
     font-size: 14px;
+    color: getColor(whitee);
+    line-height: 1.14px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    fill: currentColor;
+
+
+    &:hover,
+    &:focus {
+        color: getColor(orangee2);
+    }
+}
+
+.header__contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    fill: getColor(whitee);
+    fill: currentColor;
+
+    &:hover,
+    &:focus {
+        fill: getColor(orangee2);
+    }
 }
 
 
 .burger {
+    margin-left: 55%;
+    margin-bottom: 20px;
     display: none;
     width: 20px;
     height: 20px;
@@ -68,10 +120,10 @@
 }
 
 .line {
-    width: 3em;
-    height: .3em;
+    width: 45px;
+    height: 5px;
     background-color: getColor("whitee");
-    margin: .7em;
+    margin: .5em;
     border-radius: 20px;
     transition: .3s ease-in-out;
 }
@@ -79,24 +131,64 @@
 
 @media only screen and (max-width: 900px) {
 
-    .burger {
-        margin-right: 15%;
-        display: block;
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-    }
 
 
     
-    .line {
-        width: 44px;
-        height: 4px;
-        background-color: getColor("whitee");
-        margin: 9px;
+.header__contact {
+    display: block;
+
+    &-element {
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+    }
+} 
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    .burger {
+        display: block;
         transition: .3s ease-in-out;
     }
+
+    .burger.active .line:first-child {
+        transform: translateY(-300px);
+    }
+
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-405deg) translateY(9px);
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: rotate(-320deg) translateY(-9px);
+    }
+
+
+
+    .header__nav { 
+        position: absolute;
+        right: 0;
+        top: 100px;
+        background-color: getColor("backgroundcolor");
+        height: 80vh;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+    }
+
+    .header__nav.active {
+        transform: translate(0%);
+    }
+
+    .header__contact-style {
+        color: whitesmoke;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
 }
+
+

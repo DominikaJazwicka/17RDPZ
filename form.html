@@ -34,25 +34,56 @@ rel="stylesheet">
 
     </section>
 
-    <main class="main main__form">
 
-        <header class="header">
-            <nav>
-            <ul class="header__nav">
-                <li class="header__nav-element"><a href="./index.html"><span class="header__navelement17rdpz">17RDPZ</span></a> </li>
-                <li class="header__nav-element"><a href="./index.html"><span>Galeria</span></a></li>
-                <li class="header__nav-element"><a href="./index.html"><span>Kontakt</span></a></li>
-                <li class="header__nav-element"><a href="./index.html"><span>Formularz zgłoszeniowy</span></a></li>
-            </ul>
-            </nav>
 
-            <div>
-                <ul class="header__contact">
-                    <li class="header__contact-element"><a href="mailto:rdpz17@hotmail.com">rdpz17@hotmail.com</a></li>
-                    <li class="header__contact-element"><a href="tel:+48797638374">+48 797 638 374</a></li>
-                </ul>
-            </div>
-        </header>
+    <header class="header">
+
+        <nav class="nav"> 
+            <a href="./index.html"><span class="header__navelement17rdpz header__nav-element">17RDPZ</span></a> 
+
+        <ul class="header__nav">
+            <div class="header__nav-div">
+
+            <li class="header__nav-element"><a href="./index.html"><span class="header__navelement-tekst">Galeria</span></a></li>
+            <li class="header__nav-element"><a href="./index.html"><span class="header__navelement-tekst">Kontakt</span></a></li>
+            <li class="header__nav-element"><a href="./form.html"><span class="header__navelement-tekst">Formularz zgłoszeniowy</span></a></li>
+
+           </div>
+
+        <div class="header__contact">
+
+                <li class="header__contact-element">
+                    <a 
+                    href="mailto:rdpz17@hotmail.com" class="header__contact-style">
+                    <svg  class="header__contact-icon" width="16" height="18">
+                        <use href="./svg/symbol-defs.svg#envelope2"></use>
+                    </svg>rdpz17@hotmail.com
+                    </a>
+                </li>
+
+                <li class="header__contact-element">
+                <a 
+                    href="tel:+48797638374" class="header__contact-style">
+                    <svg  class="header__contact-icon" width="17" height="19">
+                        <use href="./svg/symbol-defs.svg#phone"></use>
+                    </svg>+48 797 638 374
+                </a>
+                </li>
+        </div>
+
+        </ul>
+
+        <button class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+       
+
+
+    </nav>
+
+    </header>
 
 
         <section class="container application">
@@ -87,7 +118,6 @@ rel="stylesheet">
     </section>
 
 
-    </main>
 
     <footer class="container  footer">
         <ul class="footer__list">
