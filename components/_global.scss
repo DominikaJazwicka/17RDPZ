@@ -5,8 +5,9 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
-    background-color: #959595;
+    background-color: var(--color-backgroundColor);
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 }

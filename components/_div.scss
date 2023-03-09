@@ -1,0 +1,18 @@
+.box {
+    position: relative;
+    z-index: 1;
+    margin: 0px;
+    width: 0px;
+    height: 0px;
+
+    &__decoration {
+        position: absolute;
+        width: 1300px;
+        height: 500px;
+        background-color: var(--color-turquoise);
+        z-index: 1;
+        top: 10px;
+        left: 300px;
+    }
+
+}

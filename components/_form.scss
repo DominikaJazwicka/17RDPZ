@@ -1,12 +1,17 @@
 @import "./variations/color";
 
 
+.test1234 {
+    position: relative;
+    z-index: 2;
+}
+
 .main {
-    background-color: getColor("backgroundcolor");
+    background-color: var(--color-backgroundColor);
     margin: auto;
 
     &__form {
-        background-color: getColor("backgroundcolor");
+        background-color: var(--color-backgroundColor);
         margin: auto;
     }
 }
@@ -25,15 +30,16 @@
 
 
 .application {
+    position: relative;
     margin: auto;
     width: auto;
     height: 550px;
-    background-color: getColor("backgroundcolor");
+
     display: flex;
     flex-wrap: wrap;
 
     &__h2 {
-        color: getColor("whitee");
+        color: var(--color-light);
         margin-top: 80px;
         font-size: 36px;
         margin-bottom: 30px;
@@ -47,7 +53,7 @@
 }
 
 .application__text {
-    color: getColor("whitee");
+    color: var(--color-light);
 }
 
 
@@ -57,7 +63,7 @@
 
 
 .application__h2-form {
-    color: getColor("whitee");
+    color: var(--color-light);
     margin-top: 80px;
     font-size: 36px;
     margin-bottom: 30px;
@@ -69,15 +75,21 @@
 
 
 .application__input {
+    border: none;
     width: 424px;
     height: 40px;
     margin-bottom: 25px;
+    background-color: var(--color-backgroundColor);
+    color: var(--color-light);
 }
 .application__input-why {
+    border: none;
     padding: 0;
     width: 424px;
     height: 80px;
     margin-bottom: 25px;
+    background-color: var(--color-backgroundColor);
+    color: var(--color-light);
 }
 
 .submit__button {
@@ -86,16 +98,18 @@
     margin-bottom: 70px;
     width: 120px;
     height: 40px;
-    background-color: getColor(orangee);
-    color: getColor(whitee);
+    background-color: var(--color-orange);
+    color: var(--color-backgroundColor);
     border: none;
     border-radius: 5px;
     box-shadow: -18px 16px 26px -16px rgba(66, 68, 90, 1);
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit__button:hover{
-    background-color: getColor(orangee2);
+    background-color: var(--color-light);
 }

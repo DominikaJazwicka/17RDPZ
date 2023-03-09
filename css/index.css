@@ -1,11 +1,29 @@
-@charset "UTF-8";
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
+}
+
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
+}
+
 html {
   overflow-x: hidden;
 }
 
 body {
+  position: relative;
   margin: 0;
-  background-color: #959595;
+  background-color: var(--color-backgroundColor);
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 }
@@ -261,13 +279,22 @@ template {
   display: none;
 }
 
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
+}
+
 .flag {
   position: relative;
 }
 .flag__white {
   width: 30px;
   height: 3000px;
-  background-color: white;
+  background-color: var(--color-white);
   position: absolute;
   z-index: 2;
   top: -100px;
@@ -279,7 +306,7 @@ template {
 .flag2__red {
   width: 30px;
   height: 3000px;
-  background-color: #D41111;
+  background-color: var(--color-red);
   position: absolute;
   z-index: 2;
   top: -100px;
@@ -303,7 +330,7 @@ template {
 .formflag__white {
   width: 30px;
   height: 1310px;
-  background-color: white;
+  background-color: var(--color-white);
   position: absolute;
   z-index: 2;
   top: -100px;
@@ -315,7 +342,7 @@ template {
 .formflag2__red {
   width: 30px;
   height: 1310px;
-  background-color: #D41111;
+  background-color: var(--color-red);
   position: absolute;
   z-index: 2;
   top: -100px;
@@ -333,10 +360,19 @@ template {
   z-index: 3;
 }
 
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
+}
+
 .header {
   width: auto;
   height: 100px;
-  background-color: #373737;
+  background-color: var(--color-backgroundColor);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -362,16 +398,17 @@ template {
 .header__nav-element {
   padding: 15px;
   font-size: 14px;
+  color: var(--color-light);
 }
 
 .header__navelement-tekst {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  color: var(--color-light);
 }
 
 .header__navelement-tekst:hover {
-  color: #D8981D;
+  color: var(--color-orange);
 }
 
 .header__contact {
@@ -397,7 +434,7 @@ template {
   justify-content: center;
   font-weight: 300;
   font-size: 14px;
-  color: white;
+  color: var(--color-light);
   line-height: 1.14px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -405,19 +442,7 @@ template {
   fill: currentColor;
 }
 .header__contact-style:hover, .header__contact-style:focus {
-  color: #D8981D;
-}
-
-.header__contact-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  fill: white;
-  fill: currentColor;
-}
-.header__contact-icon:hover, .header__contact-icon:focus {
-  fill: #D8981D;
+  color: var(--color-orange);
 }
 
 .burger {
@@ -435,7 +460,7 @@ template {
 .line {
   width: 45px;
   height: 5px;
-  background-color: white;
+  background-color: var(--color-light);
   margin: 0.5em;
   border-radius: 20px;
   transition: 0.3s ease-in-out;
@@ -468,7 +493,7 @@ template {
     position: absolute;
     right: 0;
     top: 100px;
-    background-color: #494949;
+    background-color: getColor("backgroundcolor");
     height: 80vh;
     flex-direction: column;
     text-align: center;
@@ -484,6 +509,15 @@ template {
     letter-spacing: 2px;
   }
 }
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
+}
+
 .section2 {
   margin: auto;
   justify-content: center;
@@ -491,9 +525,10 @@ template {
   display: flex;
   width: auto;
   height: 847px;
-  background-image: url("../images/zdjęciewtle2.png");
+  background-image: url("../images/mainDesktop_Easy-Resize.com.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
+  background-color: getColor(garkgray);
 }
 
 .ul-section2 {
@@ -507,7 +542,7 @@ template {
 .h1 {
   display: flex;
   margin: auto;
-  color: white;
+  color: var(--color-light);
   justify-content: center;
   text-align: center;
   font-size: 44px;
@@ -520,14 +555,14 @@ template {
 .report-back {
   cursor: pointer;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 120px;
   margin-bottom: 70px;
   display: flex;
   flex-wrap: wrap;
   width: 220px;
   height: 60px;
-  background-color: #D8601D;
-  color: white;
+  background-color: var(--color-orange);
+  color: var(--color-backgroundColor);
   justify-content: center;
   align-items: center;
   border: none;
@@ -541,7 +576,7 @@ template {
 }
 
 .report-back:hover {
-  background-color: #D8981D;
+  background-color: var(--color-light);
 }
 
 .section3 {
@@ -552,6 +587,7 @@ template {
   width: auto;
   height: 847px;
   background-repeat: no-repeat;
+  background-color: getColor(garkgray);
 }
 
 .h2 {
@@ -564,12 +600,26 @@ template {
   justify-content: center;
 }
 
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
+}
+
+.test1234 {
+  position: relative;
+  z-index: 2;
+}
+
 .main {
-  background-color: #494949;
+  background-color: var(--color-backgroundColor);
   margin: auto;
 }
 .main__form {
-  background-color: #494949;
+  background-color: var(--color-backgroundColor);
   margin: auto;
 }
 
@@ -581,18 +631,19 @@ template {
   background-image: url("../images/toform.png");
   object-fit: contain;
   background-repeat: no-repeat;
+  background-color: getColor(garkgray);
 }
 
 .application {
+  position: relative;
   margin: auto;
   width: auto;
   height: 550px;
-  background-color: #494949;
   display: flex;
   flex-wrap: wrap;
 }
 .application__h2 {
-  color: white;
+  color: var(--color-light);
   margin-top: 80px;
   font-size: 36px;
   margin-bottom: 30px;
@@ -604,7 +655,7 @@ template {
 }
 
 .application__text {
-  color: white;
+  color: var(--color-light);
 }
 
 .application__ul-form {
@@ -612,7 +663,7 @@ template {
 }
 
 .application__h2-form {
-  color: white;
+  color: var(--color-light);
   margin-top: 80px;
   font-size: 36px;
   margin-bottom: 30px;
@@ -623,16 +674,22 @@ template {
 }
 
 .application__input {
+  border: none;
   width: 424px;
   height: 40px;
   margin-bottom: 25px;
+  background-color: var(--color-backgroundColor);
+  color: var(--color-light);
 }
 
 .application__input-why {
+  border: none;
   padding: 0;
   width: 424px;
   height: 80px;
   margin-bottom: 25px;
+  background-color: var(--color-backgroundColor);
+  color: var(--color-light);
 }
 
 .submit__button {
@@ -641,18 +698,29 @@ template {
   margin-bottom: 70px;
   width: 120px;
   height: 40px;
-  background-color: #D8601D;
-  color: white;
+  background-color: var(--color-orange);
+  color: var(--color-backgroundColor);
   border: none;
   border-radius: 5px;
   box-shadow: -18px 16px 26px -16px rgb(66, 68, 90);
   font-size: 16px;
   font-weight: 700;
   font-style: normal;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .submit__button:hover {
-  background-color: #D8981D;
+  background-color: var(--color-light);
+}
+
+:root {
+  --color-backgroundColor: #001524;
+  --color-turquoise: #185660;
+  --color-orange: #FF7D00;
+  --color-light: #FFECD1;
+  --color-white: #ffff;
+  --color-red: #D41111;
 }
 
 .footer {
@@ -660,7 +728,7 @@ template {
   flex-wrap: wrap;
   width: auto;
   height: 250px;
-  background-color: #373737;
+  background-color: getColor("darkgray");
 }
 
 .footer__list {
@@ -679,11 +747,28 @@ template {
   margin-top: 5px;
   font-weight: 900;
   font-size: 14px;
-  color: white;
+  color: getColor("whitee");
 }
 
 .fotter__list-element {
   display: flex;
   margin-top: 75px;
   margin-left: 5%;
+}
+
+.box {
+  position: relative;
+  z-index: 1;
+  margin: 0px;
+  width: 0px;
+  height: 0px;
+}
+.box__decoration {
+  position: absolute;
+  width: 1300px;
+  height: 500px;
+  background-color: var(--color-turquoise);
+  z-index: 1;
+  top: 10px;
+  left: 300px;
 }/*# sourceMappingURL=index.css.map */

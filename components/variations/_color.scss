@@ -1,13 +1,10 @@
-$colors: (
-    "backgroundColor": #001524,
-    "turquoise": #185660,
-    "orange": #FF7D00,
-    "light": #FFECD1,
-    "whitee": #ffff,
-    "red": #D41111,
-);
+:root {
+    --color-backgroundColor: #001524;
+    --color-turquoise: #185660;
+    --color-orange: #FF7D00;
+    --color-light: #FFECD1;
+    --color-white: #ffff;
+    --color-red: #D41111;
+};
 
 
-@function getColor($key) {
-    @return map-get($colors, $key);
-  }
