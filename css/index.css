@@ -446,7 +446,7 @@ template {
 }
 
 .burger {
-  margin-left: 55%;
+  margin-left: 50%;
   margin-bottom: 20px;
   display: none;
   width: 20px;
@@ -471,7 +471,7 @@ template {
     display: block;
   }
   .header__contact-element {
-    padding-top: 2px;
+    padding-top: 20px;
     padding-bottom: 2px;
   }
 }
