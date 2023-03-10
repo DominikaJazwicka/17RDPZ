@@ -714,6 +714,11 @@ template {
   outline: solid 1px var(--color-orange);
 }
 
+.thank {
+  display: flex;
+  justify-content: center;
+}
+
 :root {
   --color-backgroundColor: #001524;
   --color-turquoise: #185660;

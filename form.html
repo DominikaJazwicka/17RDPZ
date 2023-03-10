@@ -103,16 +103,27 @@ rel="stylesheet">
                 <form id="contactform" 
                 action="https://formsubmit.io/send/dominikajazwicka1@gmail.com"
                 method="POST">
-                    <div>
-                    <input type="text" name="username" id="imię" 
-                           placeholder="Imię i nazwisko" 
-                           class="application__input">
-                    </div>
+
+                <input name="_formsubmit_id" type="text" style="display:none">
 
                     <div>
                     <input type="email" name="email" id="email" placeholder="E-mail" 
                            class="application__input">
                     </div>
+
+                    <div>
+                        <input type="text" name="username" id="imię" 
+                               placeholder="Imię i nazwisko" 
+                               class="application__input">
+                        </div>
+
+                    <div>
+                        <input type="text" name="username" id="imię" 
+                               placeholder="wiadomość" 
+                               class="application__input">
+                    </div>
+
+                    
 
                     <input name="_redirect" 
                     type="hidden" id="name" 
