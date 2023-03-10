@@ -609,11 +609,6 @@ template {
   --color-red: #D41111;
 }
 
-.test1234 {
-  position: relative;
-  z-index: 2;
-}
-
 .main {
   background-color: var(--color-backgroundColor);
   margin: auto;
@@ -636,9 +631,11 @@ template {
 
 .application {
   position: relative;
+  z-index: 2;
+  padding-top: 50px;
   margin: auto;
   width: auto;
-  height: 550px;
+  height: 490px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -650,8 +647,8 @@ template {
 }
 
 .application__ul-accept {
-  width: 421px;
-  margin-left: 14%;
+  width: 320px;
+  margin-left: 20%;
 }
 
 .application__text {
@@ -660,6 +657,7 @@ template {
 
 .application__ul-form {
   display: block;
+  margin-left: -150px;
 }
 
 .application__h2-form {
@@ -673,35 +671,15 @@ template {
   display: block;
 }
 
-.application__input {
-  border: none;
-  width: 424px;
-  height: 40px;
-  margin-bottom: 25px;
-  background-color: var(--color-backgroundColor);
-  color: var(--color-light);
-}
-
-.application__input-why {
-  border: none;
-  padding: 0;
-  width: 424px;
-  height: 80px;
-  margin-bottom: 25px;
-  background-color: var(--color-backgroundColor);
-  color: var(--color-light);
-}
-
 .submit__button {
   cursor: pointer;
-  margin-left: 20%;
+  margin-left: 305px;
   margin-bottom: 70px;
   width: 120px;
   height: 40px;
   background-color: var(--color-orange);
   color: var(--color-backgroundColor);
   border: none;
-  border-radius: 5px;
   box-shadow: -18px 16px 26px -16px rgb(66, 68, 90);
   font-size: 16px;
   font-weight: 700;
@@ -712,6 +690,28 @@ template {
 
 .submit__button:hover {
   background-color: var(--color-light);
+}
+
+.form {
+  margin-left: -200px;
+}
+
+.application__input {
+  border: 2px;
+  border-color: transparent;
+  width: 424px;
+  height: 40px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  background-color: var(--color-backgroundColor);
+  color: var(--color-light);
+  transition: outline 0.4s;
+}
+.application__input:focus {
+  outline: solid 1px var(--color-orange);
+}
+.application__input:hover {
+  outline: solid 1px var(--color-orange);
 }
 
 :root {
@@ -766,9 +766,10 @@ template {
 .box__decoration {
   position: absolute;
   width: 1300px;
-  height: 500px;
-  background-color: var(--color-turquoise);
+  height: 400px;
+  background-color: rgb(24, 86, 96);
+  background-image: linear-gradient(216deg, rgb(24, 86, 96) 0%, rgb(0, 21, 36) 80%);
   z-index: 1;
-  top: 10px;
+  top: 60px;
   left: 300px;
 }/*# sourceMappingURL=index.min.css.map */
